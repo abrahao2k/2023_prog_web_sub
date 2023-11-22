@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<form action="cad_aluno.php" method="post">
+
+<div class="rendered-form">
+    <div class="formbuilder-text form-group field-nome">
+        <label for="nome" class="formbuilder-text-label">Nome do Aluno<span class="formbuilder-required">*</span></label>
+        <input type="text" placeholder="Digite o nome completo sem abreviar" class="form-control" name="nome" access="false" maxlength="80" id="nome" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-select form-group field-curso">
+        <label for="curso" class="formbuilder-select-label">Curso</label>
+        <select class="form-control" name="curso" id="curso">
+            <option value="Eletrotécnica" id="curso-0">Eletrotécnica</option>
+            <option value="Edificações" id="curso-1">Edificações</option>
+            <option value="Mecânica" id="curso-2">Mecânica</option>
+            <option value="Informática" id="curso-3">Informática</option>
+        </select>
+    </div>
+    <div class="formbuilder-radio-group form-group field-turno">
+        <label for="turno" class="formbuilder-radio-group-label">Turno</label>
+        <div class="radio-group">
+            <div class="formbuilder-radio-inline">
+                <input name="turno" access="false" id="turno-0" value="Manhã" type="radio">
+                <label for="turno-0">Manhã</label>
+            </div>
+            <div class="formbuilder-radio-inline">
+                <input name="turno" access="false" id="turno-1" value="Tarde" type="radio">
+                <label for="turno-1">Tarde</label>
+            </div>
+            <div class="formbuilder-radio-inline">
+                <input name="turno" access="false" id="turno-2" value="Noite" type="radio">
+                <label for="turno-2">Noite</label>
+            </div>
+        </div>
+    </div>
+    <div class="formbuilder-button form-group field-salvar">
+        <button type="submit" class="btn-success btn" name="salvar" access="false" style="success" id="salvar">Salvar</button>
+    </div>
+</div>
+
+</form>
+</body>
+</html>
